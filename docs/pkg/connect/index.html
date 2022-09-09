@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>connect - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.18.6";</script>
+<script src="../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="../index.html">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="../index.html">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package connect
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "connect"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="index.html#AzureFunctionConnectionParams">type AzureFunctionConnectionParams</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewAzureFunctionConnectionParams">func NewAzureFunctionConnectionParams(values map[string]string) *AzureFunctionConnectionParams</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewAzureFunctionConnectionParamsFromConfig">func NewAzureFunctionConnectionParamsFromConfig(config *cconf.ConfigParams) *AzureFunctionConnectionParams</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewAzureFunctionConnectionParamsFromMaps">func NewAzureFunctionConnectionParamsFromMaps(configs ...map[string]string) *AzureFunctionConnectionParams</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewAzureFunctionConnectionParamsFromString">func NewAzureFunctionConnectionParamsFromString(line string) *AzureFunctionConnectionParams</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewAzureFunctionConnectionParamsFromTuples">func NewAzureFunctionConnectionParamsFromTuples(tuples ...any) *AzureFunctionConnectionParams</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewEmptyAzureFunctionConnectionParams">func NewEmptyAzureFunctionConnectionParams() *AzureFunctionConnectionParams</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionConnectionParams.AppName">func (c *AzureFunctionConnectionParams) AppName() (string, bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionConnectionParams.AuthCode">func (c *AzureFunctionConnectionParams) AuthCode() (string, bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionConnectionParams.FunctionName">func (c *AzureFunctionConnectionParams) FunctionName() (string, bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionConnectionParams.FunctionUri">func (c *AzureFunctionConnectionParams) FunctionUri() (string, bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionConnectionParams.Protocol">func (c *AzureFunctionConnectionParams) Protocol() (string, bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionConnectionParams.SetAppName">func (c *AzureFunctionConnectionParams) SetAppName(value string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionConnectionParams.SetAuthCode">func (c *AzureFunctionConnectionParams) SetAuthCode(value string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionConnectionParams.SetFunctionName">func (c *AzureFunctionConnectionParams) SetFunctionName(value string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionConnectionParams.SetFunctionUri">func (c *AzureFunctionConnectionParams) SetFunctionUri(value string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionConnectionParams.SetProtocol">func (c *AzureFunctionConnectionParams) SetProtocol(value string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionConnectionParams.Validate">func (c *AzureFunctionConnectionParams) Validate(correlationId string) error</a></dd>
+				
+			
+				
+				<dd><a href="index.html#AzureFunctionConnectionResolver">type AzureFunctionConnectionResolver</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewAzureFunctionConnectionResolver">func NewAzureFunctionConnectionResolver() *AzureFunctionConnectionResolver</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionConnectionResolver.Configure">func (c *AzureFunctionConnectionResolver) Configure(ctx context.Context, config *cconf.ConfigParams)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionConnectionResolver.Resolve">func (c *AzureFunctionConnectionResolver) Resolve(correlationId string) (*AzureFunctionConnectionParams, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionConnectionResolver.SetReferences">func (c *AzureFunctionConnectionResolver) SetReferences(ctx context.Context, references crefer.IReferences)</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go">AzureFunctionConnectionParams.go</a>
+			
+				<a href="http://localhost:6060/src/connect/AzureFunctionConnectionResolver.go">AzureFunctionConnectionResolver.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+		
+			
+			
+			<h2 id="AzureFunctionConnectionParams">type <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=1825:1892#L33">AzureFunctionConnectionParams</a>
+				<a class="permalink" href="index.html#AzureFunctionConnectionParams">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Contains connection parameters to authenticate against Azure
+and connect to specific Azure Functions.
+</p>
+<p>
+The class is able to compose and parse Azure Function connection parameters.
+</p>
+<pre>Configuration parameters
+	- connections:
+	     - uri:           full connection uri with specific app and function name
+	     - protocol:      connection protocol
+	     - app_name:      alternative app name
+	     - function_name: application function name
+	- credentials:
+	     - auth_code:     authorization code or null if using custom auth
+</pre>
+<p>
+In addition to standard parameters CredentialParams may contain any number of custom parameters.
+</p>
+<p>
+see AzureConnectionResolver
+</p>
+<pre>Example:
+	connection := connect.NewAzureFunctionConnectionParamsFromTuples(
+		&#34;connection.uri&#34;, &#34;<a href="http://myapp.azurewebsites.net/api/myfunction">http://myapp.azurewebsites.net/api/myfunction</a>&#34;,
+		&#34;connection.protocol&#34;, &#34;http&#34;,
+		&#34;connection.app_name&#34;, &#34;myapp&#34;,
+		&#34;connection.function_name&#34;, &#34;myfunction&#34;,
+		&#34;connection.auth_code&#34;, &#34;code&#34;,
+	)
+	uri, _ := connection.FunctionUri()          	// Result: &#34;<a href="http://myapp.azurewebsites.net/api/myfunction">http://myapp.azurewebsites.net/api/myfunction</a>&#34;
+	protocol, _ := connection.Protocol()        	// Result: &#34;http&#34;
+	appName, _ := connection.AppName()    			// Result: &#34;myapp&#34;
+	functionName, _ := connection.FunctionName()	// Result: &#34;myfunction&#34;
+	authCode, _ := connection.AuthCode()  			// Result: &#34;code&#34;
+</pre>
+
+			<pre>type AzureFunctionConnectionParams struct {
+    <a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/config/">cconf</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/config/#ConfigParams">ConfigParams</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewAzureFunctionConnectionParams">func <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=2300:2394#L45">NewAzureFunctionConnectionParams</a>
+					<a class="permalink" href="index.html#NewAzureFunctionConnectionParams">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewAzureFunctionConnectionParams(values map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a></pre>
+				<p>
+Creates an new instance of the connection parameters.
+Parameters:
+</p>
+<pre>- values	(optional) an object to be converted into key-value pairs to initialize this connection.
+</pre>
+
+				
+				
+			
+				
+				<h3 id="NewAzureFunctionConnectionParamsFromConfig">func <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=3309:3415#L64">NewAzureFunctionConnectionParamsFromConfig</a>
+					<a class="permalink" href="index.html#NewAzureFunctionConnectionParamsFromConfig">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewAzureFunctionConnectionParamsFromConfig(config *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/config/">cconf</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/config/#ConfigParams">ConfigParams</a>) *<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a></pre>
+				<p>
+Retrieves AzureFunctionConnectionParams from configuration parameters.
+The values are retrieves from &#34;connection&#34; and &#34;credential&#34; sections.
+Parameters:
+</p>
+<pre>- config	configuration parameters
+</pre>
+<p>
+Returns the generated AzureFunctionConnectionParams object.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewAzureFunctionConnectionParamsFromMaps">func <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=4593:4699#L95">NewAzureFunctionConnectionParamsFromMaps</a>
+					<a class="permalink" href="index.html#NewAzureFunctionConnectionParamsFromMaps">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewAzureFunctionConnectionParamsFromMaps(configs ...map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a></pre>
+				<p>
+Retrieves AzureFunctionConnectionParams from multiple configuration parameters.
+The values are retrieves from &#34;connection&#34; and &#34;credential&#34; sections.
+Parameters:
+</p>
+<pre>- configs	a list with configuration parameters
+</pre>
+<p>
+Returns the generated AzureFunctionConnectionParams object.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewAzureFunctionConnectionParamsFromString">func <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=2827:2918#L54">NewAzureFunctionConnectionParamsFromString</a>
+					<a class="permalink" href="index.html#NewAzureFunctionConnectionParamsFromString">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewAzureFunctionConnectionParamsFromString(line <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a></pre>
+				<p>
+Creates a new AzureFunctionConnectionParams object filled with key-value pairs serialized as a string.
+Parameters:
+</p>
+<pre>- line	a string with serialized key-value pairs as &#34;key1=value1;key2=value2;...&#34;
+		Example: &#34;Key1=123;Key2=ABC;Key3=2016-09-16T00:00:00.00Z&#34;
+</pre>
+<p>
+Returns a new AzureFunctionConnectionParams object.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewAzureFunctionConnectionParamsFromTuples">func <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=4085:4178#L85">NewAzureFunctionConnectionParamsFromTuples</a>
+					<a class="permalink" href="index.html#NewAzureFunctionConnectionParamsFromTuples">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewAzureFunctionConnectionParamsFromTuples(tuples ...<a href="http://localhost:6060/pkg/builtin/#any">any</a>) *<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a></pre>
+				<p>
+Creates a new ConfigParams object filled with provided key-value pairs called tuples.
+Tuples parameters contain a sequence of key1, value1, key2, value2, ... pairs.
+Parameters:
+</p>
+<pre>- tuples	the tuples to fill a new ConfigParams object.
+</pre>
+<p>
+Returns a new ConfigParams object.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewEmptyAzureFunctionConnectionParams">func <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=1954:2029#L38">NewEmptyAzureFunctionConnectionParams</a>
+					<a class="permalink" href="index.html#NewEmptyAzureFunctionConnectionParams">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewEmptyAzureFunctionConnectionParams() *<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a></pre>
+				<p>
+Creates an new instance of the connection parameters.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="AzureFunctionConnectionParams.AppName">func (*AzureFunctionConnectionParams) <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=5734:5798#L128">AppName</a>
+					<a class="permalink" href="index.html#AzureFunctionConnectionParams.AppName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a>) AppName() (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+Gets the Azure app name.
+Returns the Azure app name.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionConnectionParams.AuthCode">func (*AzureFunctionConnectionParams) <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=6492:6557#L154">AuthCode</a>
+					<a class="permalink" href="index.html#AzureFunctionConnectionParams.AuthCode">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a>) AuthCode() (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+Gets the Azure auth code.
+Returns the Azure auth code.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionConnectionParams.FunctionName">func (*AzureFunctionConnectionParams) <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=6107:6176#L141">FunctionName</a>
+					<a class="permalink" href="index.html#AzureFunctionConnectionParams.FunctionName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a>) FunctionName() (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+Gets the Azure function name.
+Returns the Azure function name.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionConnectionParams.FunctionUri">func (*AzureFunctionConnectionParams) <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=5356:5424#L115">FunctionUri</a>
+					<a class="permalink" href="index.html#AzureFunctionConnectionParams.FunctionUri">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a>) FunctionUri() (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+Gets the Azure Platform service uri.
+Returns the Azure sevice uri.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionConnectionParams.Protocol">func (*AzureFunctionConnectionParams) <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=4928:4993#L102">Protocol</a>
+					<a class="permalink" href="index.html#AzureFunctionConnectionParams.Protocol">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a>) Protocol() (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+Gets the Azure Platform service connection protocol.
+Returns the Azure service connection protocol.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionConnectionParams.SetAppName">func (*AzureFunctionConnectionParams) <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=5928:5992#L135">SetAppName</a>
+					<a class="permalink" href="index.html#AzureFunctionConnectionParams.SetAppName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a>) SetAppName(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				<p>
+Sets the Azure app name.
+Parameters:
+</p>
+<pre>- value	the Azure app name.
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionConnectionParams.SetAuthCode">func (*AzureFunctionConnectionParams) <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=6689:6754#L161">SetAuthCode</a>
+					<a class="permalink" href="index.html#AzureFunctionConnectionParams.SetAuthCode">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a>) SetAuthCode(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				<p>
+Sets the Azure auth code.
+Parameters:
+</p>
+<pre>- value	the Azure auth code.
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionConnectionParams.SetFunctionName">func (*AzureFunctionConnectionParams) <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=6316:6385#L148">SetFunctionName</a>
+					<a class="permalink" href="index.html#AzureFunctionConnectionParams.SetFunctionName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a>) SetFunctionName(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				<p>
+Sets the Azure function name.
+Parameters:
+</p>
+<pre>- value	the Azure function name.
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionConnectionParams.SetFunctionUri">func (*AzureFunctionConnectionParams) <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=5566:5634#L122">SetFunctionUri</a>
+					<a class="permalink" href="index.html#AzureFunctionConnectionParams.SetFunctionUri">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a>) SetFunctionUri(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				<p>
+Sets the Azure Platform service uri.
+Parameters:
+</p>
+<pre>- value	a new Azure service uri.
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionConnectionParams.SetProtocol">func (*AzureFunctionConnectionParams) <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=5172:5237#L109">SetProtocol</a>
+					<a class="permalink" href="index.html#AzureFunctionConnectionParams.SetProtocol">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a>) SetProtocol(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				<p>
+Sets the Azure Platform service connection protocol.
+Parameters:
+</p>
+<pre>- value	a new Azure service connection protocol.
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionConnectionParams.Validate">func (*AzureFunctionConnectionParams) <a href="http://localhost:6060/src/connect/AzureFunctionConnectionParams.go?s=6941:7017#L168">Validate</a>
+					<a class="permalink" href="index.html#AzureFunctionConnectionParams.Validate">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a>) Validate(correlationId <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Validates this connection parameters
+Parameters:
+</p>
+<pre>- correlationId	(optional) transaction id to trace execution through call chain.
+</pre>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="AzureFunctionConnectionResolver">type <a href="http://localhost:6060/src/connect/AzureFunctionConnectionResolver.go?s=1690:1892#L36">AzureFunctionConnectionResolver</a>
+				<a class="permalink" href="index.html#AzureFunctionConnectionResolver">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Helper class to retrieve Google connection and credential parameters,
+validate them and compose a AzureFunctionConnectionParams value.
+</p>
+<pre>Configuration parameters
+	- connections:
+	     - uri:           full connection uri with specific app and function name
+	     - protocol:      connection protocol
+	     - app_name:      alternative app name
+	     - function_name: application function name
+	- credentials:
+	     - auth_code:     authorization code or null if using custom auth
+
+References
+	- *:discovery:*:*:1.0			(optional) IDiscovery services to resolve connections
+	- *:credential-store:*:*:1.0	(optional) Credential stores to resolve credentials
+</pre>
+<p>
+see ConnectionParams (in the Pip.Services components package)
+</p>
+<pre>Example:
+	config := config.NewConfigParamsFromTuples(
+		&#34;connection.uri&#34;, &#34;<a href="http://myapp.azurewebsites.net/api/myfunction">http://myapp.azurewebsites.net/api/myfunction</a>&#34;,
+		&#34;connection.app_name&#34;, &#34;myapp&#34;,
+		&#34;connection.function_name&#34;, &#34;myfunction&#34;,
+		&#34;credential.auth_code&#34;, &#34;XXXXXXXXXX&#34;,
+	)
+	ctx := context.Background()
+	connectionResolver := connect.NewAzureConnectionResolver()
+	connectionResolver.Configure(ctx, config)
+	connectionResolver.SetReferences(ctx, references)
+
+	connectionParams, _ := connectionResolver.Resolve(&#34;123&#34;)
+</pre>
+
+			<pre>type AzureFunctionConnectionResolver struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewAzureFunctionConnectionResolver">func <a href="http://localhost:6060/src/connect/AzureFunctionConnectionResolver.go?s=1956:2030#L44">NewAzureFunctionConnectionResolver</a>
+					<a class="permalink" href="index.html#NewAzureFunctionConnectionResolver">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewAzureFunctionConnectionResolver() *<a href="index.html#AzureFunctionConnectionResolver">AzureFunctionConnectionResolver</a></pre>
+				<p>
+Creates new instance of AzureFunctionConnectionResolver
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="AzureFunctionConnectionResolver.Configure">func (*AzureFunctionConnectionResolver) <a href="http://localhost:6060/src/connect/AzureFunctionConnectionResolver.go?s=2390:2490#L55">Configure</a>
+					<a class="permalink" href="index.html#AzureFunctionConnectionResolver.Configure">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionConnectionResolver">AzureFunctionConnectionResolver</a>) Configure(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, config *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/config/">cconf</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/config/#ConfigParams">ConfigParams</a>)</pre>
+				<p>
+Configure Configures component by passing configuration parameters.
+</p>
+<pre>Parameters:
+	- ctx context.Context
+	- config *config.ConfigParams configuration parameters to be set.
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionConnectionResolver.Resolve">func (*AzureFunctionConnectionResolver) <a href="http://localhost:6060/src/connect/AzureFunctionConnectionResolver.go?s=3260:3371#L74">Resolve</a>
+					<a class="permalink" href="index.html#AzureFunctionConnectionResolver.Resolve">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionConnectionResolver">AzureFunctionConnectionResolver</a>) Resolve(correlationId <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="index.html#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Resolves connection and credential parameters and generates a single
+AzureConnectionParams value.
+Parameters:
+</p>
+<pre>- correlationId	(optional) transaction id to trace execution through call chain.
+</pre>
+<p>
+Returns AzureConnectionParams value and error
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionConnectionResolver.SetReferences">func (*AzureFunctionConnectionResolver) <a href="http://localhost:6060/src/connect/AzureFunctionConnectionResolver.go?s=2778:2885#L64">SetReferences</a>
+					<a class="permalink" href="index.html#AzureFunctionConnectionResolver.SetReferences">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionConnectionResolver">AzureFunctionConnectionResolver</a>) SetReferences(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, references <a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/refer/">crefer</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/refer/#IReferences">IReferences</a>)</pre>
+				<p>
+SetReferences sets references to dependent components.
+</p>
+<pre>Parameters:
+	- ctx context.Context
+	- references refer.IReferences references to locate the component dependencies.
+</pre>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.18.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="https://golang.org/doc/tos.html">Terms of Service</a> |
+<a href="https://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

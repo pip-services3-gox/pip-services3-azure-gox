@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>clients - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.18.6";</script>
+<script src="../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="../index.html">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="../index.html">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package clients
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "clients"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="index.html#pkg-constants">Constants</a></dd>
+			
+			
+			
+			
+				
+				<dd><a href="index.html#AzureFunctionClient">type AzureFunctionClient</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewAzureFunctionClient">func NewAzureFunctionClient() *AzureFunctionClient</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionClient.AddFilterParams">func (c *AzureFunctionClient) AddFilterParams(params *cdata.StringValueMap, filter *cdata.FilterParams) *cdata.StringValueMap</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionClient.AddPagingParams">func (c *AzureFunctionClient) AddPagingParams(params *cdata.StringValueMap, paging *cdata.PagingParams) *cdata.StringValueMap</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionClient.Call">func (c *AzureFunctionClient) Call(ctx context.Context, cmd string, correlationId string, args *cdata.AnyValueMap) (*http.Response, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionClient.Close">func (c *AzureFunctionClient) Close(ctx context.Context, correlationId string) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionClient.Configure">func (c *AzureFunctionClient) Configure(ctx context.Context, config *cconf.ConfigParams)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionClient.Instrument">func (c *AzureFunctionClient) Instrument(ctx context.Context, correlationId string, name string) *rpcsrv.InstrumentTiming</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionClient.IsOpen">func (c *AzureFunctionClient) IsOpen() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionClient.Open">func (c *AzureFunctionClient) Open(ctx context.Context, correlationId string) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AzureFunctionClient.SetReferences">func (c *AzureFunctionClient) SetReferences(ctx context.Context, references crefer.IReferences)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#CommandableAzureFunctionClient">type CommandableAzureFunctionClient</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewCommandableAzureFunctionClient">func NewCommandableAzureFunctionClient(name string) *CommandableAzureFunctionClient</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CommandableAzureFunctionClient.CallCommand">func (c *CommandableAzureFunctionClient) CallCommand(ctx context.Context, cmd string, correlationId string, params *cdata.AnyValueMap) (*http.Response, error)</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/clients/AzureFunctionClient.go">AzureFunctionClient.go</a>
+			
+				<a href="http://localhost:6060/src/clients/CommandableAzureFunctionClient.go">CommandableAzureFunctionClient.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				
+				<pre>const (
+    <span id="DefaultConnectTimeout">DefaultConnectTimeout</span> = 10000
+    <span id="DefaultTimeout">DefaultTimeout</span>        = 10000
+    <span id="DefaultRetriesCount">DefaultRetriesCount</span>   = 3
+)</pre>
+			
+		
+		
+		
+		
+			
+			
+			<h2 id="AzureFunctionClient">type <a href="http://localhost:6060/src/clients/AzureFunctionClient.go?s=3335:4179#L71">AzureFunctionClient</a>
+				<a class="permalink" href="index.html#AzureFunctionClient">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Abstract client that calls Azure Functions.
+</p>
+<p>
+When making calls &#34;cmd&#34; parameter determines which what action shall be called, while
+other parameters are passed to the action itself.
+</p>
+<pre>Configuration parameters
+	- connections:
+	    - uri:                         (optional) full connection string or use protocol, app_name and function_name t
+	    - protocol:                    (optional) connection protocol
+	    - app_name:                    (optional) Azure Function application name
+	    - function_name:               (optional) Azure Function name
+	- options:
+	     - retries:               number of retries (default: 3)
+	     - connect_timeout:       connection timeout in milliseconds (default: 10 sec)
+	     - timeout:               invocation timeout in milliseconds (default: 10 sec)
+	- credentials:
+	    - auth_code:                   Azure Function auth code if use custom authorization provide empty string
+
+References
+	- *:logger:*:*:1.0				(optional) ILogger components to pass log messages
+	- *:counters:*:*:1.0			(optional) ICounters components to pass collected measurements
+	- *:discovery:*:*:1.0			(optional) IDiscovery services to resolve connection
+	- *:credential-store:*:*:1.0	(optional) Credential stores to resolve credentials
+</pre>
+<p>
+see AzureFunction, CommandableAzureClient
+</p>
+<pre>Example:
+	type MyAzureFunctionClient struct {
+		*clients.AzureFunctionClient
+	}
+
+	func NewMyAzureFunctionClient() *MyAzureFunctionClient {
+		return &amp;MyAzureFunctionClient{
+			AzureFunctionClient: azureclient.NewAzureFunctionClient(),
+		}
+	}
+
+	func (c *MyAzureFunctionClient) GetData(ctx context.Context, correlationId string, id string) MyData {
+		timing := c.Instrument(ctx, correlationId, &#34;myclient.get_data&#34;)
+
+		response, err := c.Call(ctx, &#34;get_data&#34;, correlationId, data.NewAnyValueMapFromTuples(&#34;id&#34;, dummyId))
+
+		defer timing.EndTiming(ctx, err)
+		return rpcclients.HandleHttpResponse[MyData](response, correlationId)
+	}
+
+	...
+
+	client := NewMyAzureFunctionClient()
+	client.Configure(config.NewConfigParamsFromTuples(
+		&#34;connection.uri&#34;, &#34;<a href="http://myapp.azurewebsites.net/api/myfunction">http://myapp.azurewebsites.net/api/myfunction</a>&#34;,
+		&#34;connection.protocol&#34;, &#34;http&#34;,
+		&#34;connection.app_name&#34;, &#34;myapp&#34;,
+		&#34;connection.function_name&#34;, &#34;myfunction&#34;
+		&#34;credential.auth_code&#34;, &#34;XXXX&#34;
+	result := client.GetData(&#34;123&#34;, &#34;1&#34;)
+</pre>
+
+			<pre>type AzureFunctionClient struct {
+    <span class="comment">// The HTTP client.</span>
+<span id="AzureFunctionClient.Client"></span>    Client *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Client">Client</a>
+    <span class="comment">// The Azure Function connection parameters</span>
+<span id="AzureFunctionClient.Connection"></span>    Connection *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-azure-gox/connect/">azureconn</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-azure-gox/connect/#AzureFunctionConnectionParams">AzureFunctionConnectionParams</a>
+    <span class="comment">// The number of retries.</span>
+<span id="AzureFunctionClient.Retries"></span>    Retries <a href="http://localhost:6060/pkg/builtin/#int">int</a>
+    <span class="comment">// The default headers to be added to every request.</span>
+<span id="AzureFunctionClient.Headers"></span>    Headers *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/">cdata</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/#StringValueMap">StringValueMap</a>
+    <span class="comment">// The connection timeout in milliseconds.</span>
+<span id="AzureFunctionClient.ConnectTimeout"></span>    ConnectTimeout <a href="http://localhost:6060/pkg/builtin/#int">int</a>
+    <span class="comment">// The invocation timeout in milliseconds.</span>
+<span id="AzureFunctionClient.Timeout"></span>    Timeout <a href="http://localhost:6060/pkg/builtin/#int">int</a>
+    <span class="comment">// The remote service uri which is calculated on open.</span>
+<span id="AzureFunctionClient.Uri"></span>    Uri <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+    <span class="comment">// The connection resolver.</span>
+<span id="AzureFunctionClient.ConnectionResolver"></span>    ConnectionResolver *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-azure-gox/connect/">azureconn</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-azure-gox/connect/#AzureFunctionConnectionResolver">AzureFunctionConnectionResolver</a>
+    <span class="comment">// The dependency resolver.</span>
+<span id="AzureFunctionClient.DependencyResolver"></span>    DependencyResolver *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/refer/">crefer</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/refer/#DependencyResolver">DependencyResolver</a>
+
+    <span class="comment">// The logger.</span>
+<span id="AzureFunctionClient.Logger"></span>    Logger *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-components-gox/log/">clog</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-components-gox/log/#CompositeLogger">CompositeLogger</a>
+    <span class="comment">// The performance counters.</span>
+<span id="AzureFunctionClient.Counters"></span>    Counters *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-components-gox/count/">ccount</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-components-gox/count/#CompositeCounters">CompositeCounters</a>
+    <span class="comment">// The tracer.</span>
+<span id="AzureFunctionClient.Tracer"></span>    Tracer *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-components-gox/trace/">ctrace</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-components-gox/trace/#CompositeTracer">CompositeTracer</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewAzureFunctionClient">func <a href="http://localhost:6060/src/clients/AzureFunctionClient.go?s=4337:4387#L106">NewAzureFunctionClient</a>
+					<a class="permalink" href="index.html#NewAzureFunctionClient">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewAzureFunctionClient() *<a href="index.html#AzureFunctionClient">AzureFunctionClient</a></pre>
+				<p>
+Creates new instance of AzureFunctionClient
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="AzureFunctionClient.AddFilterParams">func (*AzureFunctionClient) <a href="http://localhost:6060/src/clients/AzureFunctionClient.go?s=10365:10490#L292">AddFilterParams</a>
+					<a class="permalink" href="index.html#AzureFunctionClient.AddFilterParams">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionClient">AzureFunctionClient</a>) AddFilterParams(params *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/">cdata</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/#StringValueMap">StringValueMap</a>, filter *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/">cdata</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/#FilterParams">FilterParams</a>) *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/">cdata</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/#StringValueMap">StringValueMap</a></pre>
+				<p>
+AddFilterParams method are adds filter parameters (with the same name as they defined)
+to invocation parameter map.
+</p>
+<pre>Parameters:
+	- params  *cdata.StringValueMap      invocation parameters.
+	- filter  *cdata.FilterParams     (optional) filter parameters
+Returns: invocation parameters with added filter parameters.
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionClient.AddPagingParams">func (*AzureFunctionClient) <a href="http://localhost:6060/src/clients/AzureFunctionClient.go?s=10954:11079#L310">AddPagingParams</a>
+					<a class="permalink" href="index.html#AzureFunctionClient.AddPagingParams">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionClient">AzureFunctionClient</a>) AddPagingParams(params *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/">cdata</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/#StringValueMap">StringValueMap</a>, paging *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/">cdata</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/#PagingParams">PagingParams</a>) *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/">cdata</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/#StringValueMap">StringValueMap</a></pre>
+				<p>
+AddPagingParams method are adds paging parameters (skip, take, total) to invocation parameter map.
+Parameters:
+</p>
+<pre>- params        invocation parameters.
+- paging        (optional) paging parameters
+</pre>
+<p>
+Return invocation parameters with added paging parameters.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionClient.Call">func (*AzureFunctionClient) <a href="http://localhost:6060/src/clients/AzureFunctionClient.go?s=8560:8700#L218">Call</a>
+					<a class="permalink" href="index.html#AzureFunctionClient.Call">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionClient">AzureFunctionClient</a>) Call(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, cmd <a href="http://localhost:6060/pkg/builtin/#string">string</a>, correlationId <a href="http://localhost:6060/pkg/builtin/#string">string</a>,
+    args *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/">cdata</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/#AnyValueMap">AnyValueMap</a>) (*<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Response">Response</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Performs Azure Function invocation.
+Parameters:
+</p>
+<pre>- cmd	an action name to be called.
+- correlationId	(optional) transaction id to trace execution through call chain.
+- args	action arguments
+</pre>
+<p>
+Returns action result.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionClient.Close">func (*AzureFunctionClient) <a href="http://localhost:6060/src/clients/AzureFunctionClient.go?s=8073:8157#L203">Close</a>
+					<a class="permalink" href="index.html#AzureFunctionClient.Close">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionClient">AzureFunctionClient</a>) Close(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, correlationId <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Closes component and frees used resources.
+Parameters:
+</p>
+<pre>-correlationId	(optional) transaction id to trace execution through call chain.
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionClient.Configure">func (*AzureFunctionClient) <a href="http://localhost:6060/src/clients/AzureFunctionClient.go?s=4929:5017#L123">Configure</a>
+					<a class="permalink" href="index.html#AzureFunctionClient.Configure">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionClient">AzureFunctionClient</a>) Configure(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, config *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/config/">cconf</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/config/#ConfigParams">ConfigParams</a>)</pre>
+				<p>
+Configure object by passing configuration parameters.
+</p>
+<pre>Parameters:
+	- ctx context.Context
+	- config: ConfigParams configuration parameters to be set.
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionClient.Instrument">func (*AzureFunctionClient) <a href="http://localhost:6060/src/clients/AzureFunctionClient.go?s=6305:6426#L151">Instrument</a>
+					<a class="permalink" href="index.html#AzureFunctionClient.Instrument">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionClient">AzureFunctionClient</a>) Instrument(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, correlationId <a href="http://localhost:6060/pkg/builtin/#string">string</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-rpc-gox/services/">rpcsrv</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-rpc-gox/services/#InstrumentTiming">InstrumentTiming</a></pre>
+				<p>
+Instrument method are adds instrumentation to log calls and measure call time.
+It returns a services.InstrumentTiming object that is used to end the time measurement.
+</p>
+<pre>Parameters:
+	- ctx context.Context
+	- correlationId string (optional) transaction id to trace execution through call chain.
+	- name string a method name.
+Returns: services.InstrumentTiming object to end the time measurement.
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionClient.IsOpen">func (*AzureFunctionClient) <a href="http://localhost:6060/src/clients/AzureFunctionClient.go?s=6924:6967#L162">IsOpen</a>
+					<a class="permalink" href="index.html#AzureFunctionClient.IsOpen">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionClient">AzureFunctionClient</a>) IsOpen() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+IsOpen Checks if the component is opened.
+</p>
+<pre>Returns: bool true if the component has been opened and false otherwise.
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionClient.Open">func (*AzureFunctionClient) <a href="http://localhost:6060/src/clients/AzureFunctionClient.go?s=7175:7258#L171">Open</a>
+					<a class="permalink" href="index.html#AzureFunctionClient.Open">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionClient">AzureFunctionClient</a>) Open(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, correlationId <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Open opens the component.
+</p>
+<pre>Parameters:
+	- ctx context.Context
+	- correlationId: string transaction id to trace execution through call chain.
+Return: error
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="AzureFunctionClient.SetReferences">func (*AzureFunctionClient) <a href="http://localhost:6060/src/clients/AzureFunctionClient.go?s=5587:5682#L137">SetReferences</a>
+					<a class="permalink" href="index.html#AzureFunctionClient.SetReferences">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#AzureFunctionClient">AzureFunctionClient</a>) SetReferences(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, references <a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/refer/">crefer</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/refer/#IReferences">IReferences</a>)</pre>
+				<p>
+SetReferences sets references to dependent components.
+</p>
+<pre>see IReferences
+Parameters:
+	- ctx context.Context
+	- references IReferences references to locate the component dependencies.
+</pre>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="CommandableAzureFunctionClient">type <a href="http://localhost:6060/src/clients/CommandableAzureFunctionClient.go?s=2642:2726#L58">CommandableAzureFunctionClient</a>
+				<a class="permalink" href="index.html#CommandableAzureFunctionClient">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Abstract client that calls commandable Azure Functions.
+</p>
+<p>
+Commandable services are generated automatically for ICommandable objects.
+Each command is exposed as action determined by &#34;cmd&#34; parameter.
+</p>
+<pre>Configuration parameters
+	- connections:
+	    - uri:                         (optional) full connection string or use protocol, app_name and function_name to build
+	    - protocol:                    (optional) connection protocol
+	    - app_name:                    (optional) Azure Function application name
+	    - function_name:               (optional) Azure Function name
+	- options:
+	     - retries:               number of retries (default: 3)
+	     - connect_timeout:       connection timeout in milliseconds (default: 10 sec)
+	     - timeout:               invocation timeout in milliseconds (default: 10 sec)
+	- credentials:
+	    - auth_code:                   Azure Function auth code if use custom authorization provide empty string
+
+References
+	- *:logger:*:*:1.0				(optional) ILogger components to pass log messages
+	- *:counters:*:*:1.0			(optional) ICounters components to pass collected measurements
+	- *:discovery:*:*:1.0			(optional) IDiscovery services to resolve connection
+	- *:credential-store:*:*:1.0	(optional) Credential stores to resolve credentials
+</pre>
+<p>
+see AzureFunction
+</p>
+<pre>Exammple:
+	type MyCommandableAzureClient struct {
+		*clients.CommandableAzureFunctionClient
+	}
+
+	func NewMyCommandableAzureClient() *MyCommandableAzureClient {
+		return &amp;MyCommandableAzureClient{
+			CommandableAzureFunctionClient: azureclient.NewCommandableAzureFunctionClient(),
+		}
+	}
+
+	func (c *MyCommandableAzureClient) GetData(ctx context.Context, correlationId string, id string) MyData {
+		response, err := c.CallCommand(ctx, &#34;dummies.get_dummies&#34;, correlationId, cdata.NewAnyValueMapFromTuples(&#34;id&#34;, id))
+		if err != nil {
+			return MyData{}, err
+		}
+
+		return rpcclient.HandleHttpResponse[MyData](response, correlationId)
+	}
+
+	...
+	client := NewMyCommandableAzureClient()
+	client.Configure(config.NewConfigParamsFromTuples(
+		&#34;connection.uri&#34;, &#34;<a href="http://myapp.azurewebsites.net/api/myfunction">http://myapp.azurewebsites.net/api/myfunction</a>&#34;,
+		&#34;connection.protocol&#34;, &#34;http&#34;,
+		&#34;connection.app_name&#34;, &#34;myapp&#34;,
+		&#34;connection.function_name&#34;, &#34;myfunction&#34;
+		&#34;credential.auth_code&#34;, &#34;XXXX&#34;
+	))
+	result := client.GetData(&#34;123&#34;, &#34;1&#34;)
+	...
+</pre>
+
+			<pre>type CommandableAzureFunctionClient struct {
+    *<a href="index.html#AzureFunctionClient">AzureFunctionClient</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewCommandableAzureFunctionClient">func <a href="http://localhost:6060/src/clients/CommandableAzureFunctionClient.go?s=2817:2900#L66">NewCommandableAzureFunctionClient</a>
+					<a class="permalink" href="index.html#NewCommandableAzureFunctionClient">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewCommandableAzureFunctionClient(name <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#CommandableAzureFunctionClient">CommandableAzureFunctionClient</a></pre>
+				<p>
+Creates a new instance of this client.
+Parameters:
+</p>
+<pre>- name	a service name.
+</pre>
+
+				
+				
+			
+
+			
+				
+				<h3 id="CommandableAzureFunctionClient.CallCommand">func (*CommandableAzureFunctionClient) <a href="http://localhost:6060/src/clients/CommandableAzureFunctionClient.go?s=3328:3486#L78">CallCommand</a>
+					<a class="permalink" href="index.html#CommandableAzureFunctionClient.CallCommand">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#CommandableAzureFunctionClient">CommandableAzureFunctionClient</a>) CallCommand(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, cmd <a href="http://localhost:6060/pkg/builtin/#string">string</a>, correlationId <a href="http://localhost:6060/pkg/builtin/#string">string</a>, params *<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/">cdata</a>.<a href="http://localhost:6060/pkg/github.com/pip-services3-gox/pip-services3-commons-gox/data/#AnyValueMap">AnyValueMap</a>) (*<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Response">Response</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Calls a remote action in Azure Function.
+The name of the action is added as &#34;cmd&#34; parameter
+to the action parameters.
+Parameters:
+</p>
+<pre>- cmd	an action name
+- correlationId	(optional) transaction id to trace execution through call chain.
+- params	command parameters.
+</pre>
+<p>
+Returns action result.
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.18.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="https://golang.org/doc/tos.html">Terms of Service</a> |
+<a href="https://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>
