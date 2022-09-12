@@ -181,11 +181,11 @@ func (c *AzureFunctionConnectionParams) Validate(correlationId string) error {
 	_, appNameOk := c.AppName()
 	_, functionNameOk := c.FunctionName()
 
-	if !uriOk && (!appNameOk && !functionNameOk && !protocolOk) {
+	if !uriOk && (!appNameOk || !functionNameOk || !protocolOk) {
 		return cerr.NewConfigError(
 			correlationId,
 			"NO_CONNECTION_URI",
-			"No uri, app_name and function_name is configured in Auzre function uri",
+			"No uri, app_name and function_name is not configured in Auzre function uri",
 		)
 	}
 
