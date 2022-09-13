@@ -40,7 +40,12 @@ func (c *DummyAzureFunctionClient) GetDummyById(ctx context.Context, correlation
 	}
 
 	defer timing.EndTiming(ctx, err)
-	return rpcclients.HandleHttpResponse[tdata.Dummy](response, correlationId)
+	if response != nil {
+		return rpcclients.HandleHttpResponse[tdata.Dummy](response, correlationId)
+	}
+
+	return tdata.Dummy{}, nil
+
 }
 
 func (c *DummyAzureFunctionClient) CreateDummy(ctx context.Context, correlationId string, dummy tdata.Dummy) (result tdata.Dummy, err error) {
