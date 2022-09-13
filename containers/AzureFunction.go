@@ -378,7 +378,7 @@ func (c *AzureFunction) RegisterServices() {
 // Deprecated: This method has been deprecated. Use AzureFunctionService instead.
 func (c *AzureFunction) RegisterAction(cmd string, schema *cvalid.Schema, action http.HandlerFunc) {
 	if cmd == "" {
-		panic("NO_COMMAND: Missing command")
+		panic("NO_COMMAND: Cmd parameter is missing")
 	}
 
 	if action == nil {

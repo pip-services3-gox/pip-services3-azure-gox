@@ -228,7 +228,7 @@ func (c *AzureFunctionClient) Close(ctx context.Context, correlationId string) e
 func (c *AzureFunctionClient) Call(ctx context.Context, cmd string, correlationId string,
 	args *cdata.AnyValueMap) (*http.Response, error) {
 	if cmd == "" {
-		cerr.NewUnknownError(correlationId, "NO_COMMAND", "Missing command")
+		cerr.NewUnknownError(correlationId, "NO_COMMAND", "Cmd parameter is missing")
 	}
 
 	if !c.IsOpen() {
