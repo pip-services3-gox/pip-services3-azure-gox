@@ -120,7 +120,7 @@ func NewAzureFunctionClient() *AzureFunctionClient {
 	c.DependencyResolver = crefer.NewDependencyResolver()
 	c.Logger = clog.NewCompositeLogger()
 	c.Counters = ccount.NewCompositeCounters()
-	c.Tracer = ctrace.NewCompositeTracer(context.Background(), nil)
+	c.Tracer = ctrace.NewCompositeTracer()
 	c.Headers = cdata.NewEmptyStringValueMap()
 
 	return &c

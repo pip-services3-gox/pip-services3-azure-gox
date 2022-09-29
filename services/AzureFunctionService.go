@@ -126,7 +126,7 @@ func NewAzureFunctionService(name string) *AzureFunctionService {
 		DependencyResolver: crefer.NewDependencyResolver(),
 		Logger:             clog.NewCompositeLogger(),
 		Counters:           ccount.NewCompositeCounters(),
-		Tracer:             ctrace.NewCompositeTracer(context.Background(), nil),
+		Tracer:             ctrace.NewCompositeTracer(),
 	}
 
 	c.Overrides = &c
@@ -144,7 +144,7 @@ func InheritAzureFunctionService(overrides IAzureFunctionServiceOverrides, name 
 		DependencyResolver: crefer.NewDependencyResolver(),
 		Logger:             clog.NewCompositeLogger(),
 		Counters:           ccount.NewCompositeCounters(),
-		Tracer:             ctrace.NewCompositeTracer(context.Background(), nil),
+		Tracer:             ctrace.NewCompositeTracer(),
 	}
 }
 
