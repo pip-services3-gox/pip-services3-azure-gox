@@ -70,7 +70,7 @@ type IAzureFunctionOverrides interface {
 //		fmt.Println("MyAzureFunction is started")
 //
 type AzureFunction struct {
-	ccont.Container
+	*ccont.Container
 
 	Overrides IAzureFunctionOverrides
 	// The dependency resolver.
@@ -102,7 +102,7 @@ func NewAzureFunction() *AzureFunction {
 		configPath:         "./config/config.yml",
 	}
 
-	c.Container = *ccont.InheritContainer("", "", &c)
+	c.Container = ccont.InheritContainer("", "", &c)
 	c.Overrides = &c
 	c.SetLogger(clog.NewConsoleLogger())
 
@@ -123,7 +123,7 @@ func NewAzureFunctionWithParams(name string, description string) *AzureFunction 
 		configPath:         "./config/config.yml",
 	}
 
-	c.Container = *ccont.InheritContainer(name, description, &c)
+	c.Container = ccont.InheritContainer(name, description, &c)
 	c.Overrides = &c
 	c.SetLogger(clog.NewConsoleLogger())
 
@@ -142,7 +142,7 @@ func InheritAzureFunction(overrides IAzureFunctionOverrides) *AzureFunction {
 		configPath:         "./config/config.yml",
 	}
 
-	c.Container = *ccont.InheritContainer("", "", overrides)
+	c.Container = ccont.InheritContainer("", "", overrides)
 	c.SetLogger(clog.NewConsoleLogger())
 
 	return &c
@@ -163,7 +163,7 @@ func InheritAzureFunctionWithParams(overrides IAzureFunctionOverrides, name stri
 		configPath:         "./config/config.yml",
 	}
 
-	c.Container = *ccont.InheritContainer("", "", overrides)
+	c.Container = ccont.InheritContainer("", "", overrides)
 	c.SetLogger(clog.NewConsoleLogger())
 
 	return &c
