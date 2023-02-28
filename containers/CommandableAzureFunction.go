@@ -20,8 +20,8 @@ import (
 //	References
 //		- *:logger:*:*:1.0							(optional) ILogger components to pass log messages
 //		- *:counters:*:*:1.0						(optional) ICounters components to pass collected measurements
-//		- *:service:azure-function:*:1.0       		(optional) IAzureFunctionService services to handle action requests
-//		- *:service:commandable-azure-function:*:1.0	(optional) IAzureFunctionService services to handle action requests
+//		- *:service:azurefunc:*:1.0       		(optional) IAzureFunctionService services to handle action requests
+//		- *:service:commandable-azurefunc:*:1.0	(optional) IAzureFunctionService services to handle action requests
 //
 //	Example:
 //		type MyAzureFunction struct {

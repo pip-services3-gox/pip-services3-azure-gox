@@ -20,7 +20,7 @@ func newDummyAzureFunctionServiceTest() *DummyAzureFunctionServiceTest {
 func (c *DummyAzureFunctionServiceTest) setup(t *testing.T) {
 	config := cconf.NewConfigParamsFromTuples(
 		"logger.descriptor", "pip-services:logger:console:default:1.0",
-		"service.descriptor", "pip-services-dummies:service:azure-function:default:1.0",
+		"service.descriptor", "pip-services-dummies:service:azurefunc:default:1.0",
 	)
 
 	ctx := context.Background()

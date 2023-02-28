@@ -18,8 +18,8 @@ func NewDummyAzureFunctionServiceFactory() *DummyAzureFunctionServiceFactory {
 	c := DummyAzureFunctionServiceFactory{
 		Factory:                   *cbuild.NewFactory(),
 		Descriptor:                cref.NewDescriptor("pip-services-dummies", "factory", "default", "default", "1.0"),
-		AzureServiceDescriptor:    cref.NewDescriptor("pip-services-dummies", "service", "azure-function", "*", "1.0"),
-		CmdAzureServiceDescriptor: cref.NewDescriptor("pip-services-dummies", "service", "commandable-azure-function", "*", "1.0"),
+		AzureServiceDescriptor:    cref.NewDescriptor("pip-services-dummies", "service", "azurefunc", "*", "1.0"),
+		CmdAzureServiceDescriptor: cref.NewDescriptor("pip-services-dummies", "service", "commandable-azurefunc", "*", "1.0"),
 	}
 
 	c.RegisterType(c.AzureServiceDescriptor, NewDummyAzureFunctionService)

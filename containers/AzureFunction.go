@@ -48,8 +48,8 @@ type IAzureFunctionOverrides interface {
 // 	References
 //		- *:logger:*:*:1.0							(optional) ILogger components to pass log messages
 //		- *:counters:*:*:1.0						(optional) ICounters components to pass collected measurements
-//		- *:service:azure-function:*:1.0				(optional) IAzureFunctionService services to handle action requests
-//		- *:service:commandable-azure-function:*:1.0	(optional) IAzureFunctionService services to handle action requests
+//		- *:service:azurefunc:*:1.0				(optional) IAzureFunctionService services to handle action requests
+//		- *:service:commandable-azurefunc:*:1.0	(optional) IAzureFunctionService services to handle action requests
 //
 //	Example:
 //		type MyAzureFunction struct {
@@ -353,8 +353,8 @@ func (c *AzureFunction) Run(ctx context.Context) {
 // Registers all Azure Function services in the container.
 func (c *AzureFunction) RegisterServices() {
 	// Extract regular and commandable Azure Function services from references
-	services := c.References.GetOptional(crefer.NewDescriptor("*", "service", "azure-function", "*", "*"))
-	cmdServices := c.References.GetOptional(crefer.NewDescriptor("*", "service", "commandable-azure-function", "*", "*"))
+	services := c.References.GetOptional(crefer.NewDescriptor("*", "service", "azurefunc", "*", "*"))
+	cmdServices := c.References.GetOptional(crefer.NewDescriptor("*", "service", "commandable-azurefunc", "*", "*"))
 	services = append(services, cmdServices...)
 
 	// Register actions defined in those services
